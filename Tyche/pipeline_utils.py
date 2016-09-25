@@ -97,7 +97,7 @@ def calculate_fixture_result(fixture_row, param_df, home_team_name,
     '''
     Using the param_df, calculate the home_prob, draw_prob, and away_prob.
     '''
-    row_num = 9500
+    row_num = 1
     mu = calculate_mu(home_team_name, away_team_name, param_df, row_num)
     lambda_val = calculate_lambda_val(home_team_name, away_team_name,
         param_df, row_num)

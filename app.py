@@ -59,14 +59,14 @@ if __name__ == '__main__':
     fixture_df = get_fixtures()
 
     #print param_df.head()
-    #import time
+    import time
 
     #print("Sleeping")
-    #time.sleep(100)
 
+    time.sleep(100)
 
     predictions_df = pipeline_utils.make_predictions_from_fixture_list(fixture_df,
-        param_df, 2500)
+        param_df.describe(), 1)
 
     print("Done")
 
